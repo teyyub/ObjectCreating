@@ -14,6 +14,7 @@ public class DeserializationKeyword {
             DeserializationKeyword d;
             File fc = new File(userDirectory+"/file.txt");
             fc.createNewFile();
+
             FileInputStream f = new FileInputStream(userDirectory+"/file.txt");
             ObjectInputStream oos = new ObjectInputStream(f);
             d = (DeserializationKeyword)oos.readObject();
